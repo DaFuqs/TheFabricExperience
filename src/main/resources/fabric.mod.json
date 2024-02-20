@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "thefabricexperience",
+  "version": "${version}",
+
+  "name": "The Fabric Experience",
+  "description": "Unified experience transfer and experience fluid API ",
+  "authors": [
+    "DaFuqs"
+  ],
+  "contact": {
+    "repo": "https://github.com/DaFuqs/TheFabricExperience"
+  },
+
+  "license": "MIT",
+  "icon": "assets/thefabricexperience/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.dafuqs.thefabricexperience.TheFabricExperience"
+    ],
+    "client": [
+      "de.dafuqs.thefabricexperience.TheFabricExperienceClient"
+    ]
+  },
+
+  "mixins": [
+    "TheFabricExperience.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": ">=${minecraft_version}",
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*"
+  }
+}
